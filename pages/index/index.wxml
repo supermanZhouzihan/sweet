@@ -1,0 +1,66 @@
+
+<!-- //导航条 -->
+<view class="nav">
+<text>成都</text>
+<view>
+  <text  wx:for="{{item}}" data-idx="{{index}}" class='items' hover-class="red"  bindtap="navbarTap"  wx:key="unique">{{item}}</text>
+</view>
+<image src='../../img/a63.png' class='nav_img'></image>
+</view>
+<!--热映页面  -->
+<view hidden="{{currentTab!==0}}" >
+<view >
+  <view wx:for="{{list}}" wx:key="{{index}}" class='viewmovie' bindtap="dyxq" data-id='{{item._id}}'>
+  <view class='left'>
+    <image src="{{ip+item.movie_cover_img}}" class='img'>
+    </image>
+    <view class='movie_msg'>
+        <view class='movieName'>{{item.movie_cName}}</view>
+        <view>{{item.movie_type}}</view>
+        <view>主演：{{item.movie_actors}}</view>
+        <view>{{item.movieday}}</view>
+    </view>
+  </view>
+    <view class='score_btn'>
+      <view>{{item.movie_scoring}}</view>
+      <button>{{item.active}}</button>
+    </view>
+    </view>
+  </view>
+</view> 
+  <!--待映页面  -->
+<view hidden="{{currentTab!==1}}">
+
+<view>
+<view>近期最受欢迎</view>
+<view class='model'>
+<view wx:for="{{hotList}}" wx:key="{{index}}" class='btn_scoll'>
+<image src="{{ip+item.movie_cover_img}}" class='img_scorll'>
+</image>
+<text>{{item.movie_cName}}</text>
+<text>{{item.movie_see}}想看</text>
+<text>{{item.movie_date}}</text>
+</view>
+</view>
+</view>
+
+   <view wx:for="{{list}}" wx:key="{{index}}" class='viewmovie'>
+  <view class='left'>
+    <image src="{{ip+item.movie_cover_img}}" class='img'>
+    </image>
+    <view class='movie_msg'>
+        <view  class='movieName' >{{item.movie_cName}}</view>
+        <view>{{item.movie_type}}</view>
+        <view>主演：{{item.movie_actors}}</view>
+        <view>{{item.movieday}}</view>
+    </view>
+  </view>
+    <view class='score_btn'>
+      <view>{{item.movie_scoring}}</view>
+      <button>{{item.active}}</button>
+    </view>
+    
+  </view>
+</view> 
+ 
+ 

@@ -1,0 +1,76 @@
+<!--pages/dyxq/dyxq.wxml-->
+<view class='movie_itrobig'>
+  <view class='innermovie_itro'>
+    <image src="{{ip+movie.movie_cover_img}}" class='img_dyxq' ></image>
+    <view class='movie_word'>
+      <view class='cnmae'>{{movie.movie_cName}}</view>
+      <view class='ename'>{{movie.movie_eName}}</view>
+      <view class='score'>{{movie.movie_scoring}}</view>
+      <view>{{movie.movie_type}}</view>
+      <view>{{movie.movie_region+movie.movie_duration}}</view>
+      <view>{{movie.movie_date}}</view>
+    </view>
+  </view>
+  <view class='btn'>
+  <button><image src="../../img/收藏.png"></image><text>想看</text></button>
+  <button><image src="../../img/收藏 (1).png"></image><text>评分</text></button>
+  </view>
+</view>
+<view bindtap='changeHight'>
+<view id='movie_itrotext'  style='height:{{height}};overflow-y: hidden'>
+{{movie.movie_introduce}}
+</view>
+<image src="{{img_jiantouUrl}}" class='img_jiantou'></image>
+</view>
+<!-- //演职人员 -->
+<view class='moudle_actor'>
+<view class='text_title'>演职人员</view>
+  <view class='movie_people'>
+      <view class='direcor'>
+        <image src='{{ip+movie.movie_director_img}}'></image>
+        <text>{{movie.movie_director}}</text>
+        <text>导演</text>
+      </view>
+      <view class='actorimg'>
+        <view class='actor' wx:for="{{actorList}}" >
+          <image src='{{ip+item}}'></image>
+        </view>
+      </view>
+        <view wx:for="{{actorName}}" wx:for-item="actname" class='actnm'>
+          <!-- <text>{{actname}}</text>  -->
+        </view>
+  </view>
+</view>
+<view class='ticket'>
+<view class='text_title'>票房</view> 
+  <view class='tickethouse'>
+    <view><view class='msgtop'>1</view><view class='msgbtom'>昨日票房排行</view></view>
+    <view><view class='msgtop'>1</view><view class='msgbtom'>首周票房（万）</view></view>
+    <view><view class='msgtop'>{{movie.movie_ticket}}</view><view class='msgbtom'>累积票房</view></view>
+  </view>
+</view>
+<view class='movieimg'>
+ <view class='title_movieimg'><view>视频和剧照</view><view>{{movie.movie_img.length}}></view></view>
+ <view class="img_movie">
+  <view wx:for="{{movie_imgList}}">
+  <view class="movie_imgitem"><image src='{{ip+item}}'></image></view>
+  </view>
+</view>
+</view>
+<view class='arguments'>
+  <view class='title_argument'>
+    <view>观众评论</view>
+    <view><view class='img_font'>写短评</view></view>
+  </view>
+  <view class='user'>
+  <image src='../../img/1531826420559.jpg' class='head'></image>
+    <view class='user_argright'>
+      <view>洛神千</view>
+      <view>这部片是真的值得去看的</view>
+      <view class='msg_arg'>
+        <view>2018-2-8</view>
+        <view><image src='../../img/点赞.png' class='zanbefo'></image><text>200</text></view>
+      </view>
+    </view>
+  </view>
+</view>

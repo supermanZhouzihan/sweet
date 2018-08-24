@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/movie/maoyan",
+    "pages/dyxq/dyxq"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#dd403b",
+    "navigationBarTitleText": "猫眼电影",
+    "navigationBarTextStyle": "#fff6ea"
+  },
+  "tabBar": {
+    "color": "#676767",
+    "selectedColor": "#ef384a",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影",
+        "iconPath": "img/微信图片_20180815212333.png",
+        "selectedIconPath": "img/微信图片_20180815212327.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "影院",
+        "iconPath": "img/微信图片_20180815212337.png",
+        "selectedIconPath": "img/微信图片_20180815212236.png"
+      },
+      {
+        "pagePath": "pages/movie/maoyan",
+        "text": "我的",
+        "iconPath": "img/微信图片_20180815212308.png",
+        "selectedIconPath": "img/微信图片_20180815212320.png"
+      }
+    ]
+  }
+}

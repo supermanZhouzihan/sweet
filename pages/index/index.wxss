@@ -1,0 +1,100 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.navigator-hover {
+	color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+	color:red;
+}
+
+
+
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d7d7d7;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  font-size: 14px;
+}
+.img{
+  width: 200rpx;
+  height: 300rpx;
+   padding: 0 20rpx; 
+}
+.viewmovie{
+  padding-bottom: 40rpx;
+  padding-top:40rpx;
+  border-bottom: 1px solid #d7d7d7;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between ;
+}
+.nav_img{
+  width: 44rpx;
+  height: 44rpx;
+}
+.items{
+  font-size: 16px;
+}
+.left{
+  display: flex;
+}
+.movie_msg{
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+.movie_msg>view{
+  width: 300rpx;
+}
+.score_btn{
+  display: flex;
+   flex-direction: column; 
+  text-align: center;
+}
+.movieName{
+  font-size: 18px;
+}
+
+.score_btn view{
+  padding-bottom: 20rpx;
+}
+.img_scorll{
+  width: 100px;
+  height: 200px;
+}
+.btn_scoll{
+  width: 100%;
+  height: 300rpx;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.model{
+  display: flex;
+  overflow: auto;
+  height: 180px;
+}

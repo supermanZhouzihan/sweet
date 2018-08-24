@@ -1,0 +1,181 @@
+/* pages/dyxq/dyxq.wxss */
+.movie_itrobig{
+  display: flex;
+  background-color: #d2c193;
+  font-size: 14px;
+  color:#bab7b0;
+  padding: 20rpx 0;
+  flex-direction: column
+}
+.innermovie_itro{
+  display: flex;
+  padding-bottom: 20rpx;
+}
+ .img_dyxq{
+  width: 200rpx;
+  height: 300rpx;
+  border: 2px solid #fcf7f4;
+  margin: 0 20rpx ;
+} 
+.movie_word{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300rpx;
+}
+.cnmae{
+color: #fcf7f4;
+font-size: 18px;
+}
+.ename{
+color: #fcf7f4;
+}
+.score{
+font-size: 16px;
+color:#ffb907;
+}
+.btn{
+  display:  flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+.btn>button{
+  font-size: 16px;
+  width: 350rpx;
+  height: 80rpx;
+  background-color: #7b7672;
+  color: #f8f0ee;
+  display:  flex;
+  justify-content: center;
+}
+.btn image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-top: 20rpx;
+}
+#movie_itrotext{
+  padding: 20rpx 20rpx;
+  font-size: 14px; 
+  line-height: 28px;
+  overflow-y: hidden;  
+}
+.img_jiantou{
+  width: 14px;
+  height: 14px;
+  margin: 0 auto;
+  display: block;
+}
+.movie_people{
+   display: flex; 
+  font-size: 14px;
+   overflow: auto;
+  flex-wrap: nowrap;
+}
+.movie_people image{
+  width: 200rpx;
+  height: 250rpx;
+}
+.direcor{
+  display: flex;
+  flex-direction: column; 
+}
+.actor {
+display: flex;
+}
+.actorimg{
+   display: flex; 
+}
+.actnm{
+  display: flex;
+  font-size: 14px;
+  left: 100px;
+}
+.text_title{
+  font-size: 14px;
+  padding-bottom: 30rpx;
+}
+.tickethouse{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.msgtop{
+  color: red;
+
+}
+.msgbtom{
+  font-size: 14px;
+  color: gray;
+}
+.ticket{
+  padding: 20rpx 20rpx;
+  margin-bottom: 40rpx;
+}
+.moudle_actor{
+  padding: 0 20rpx;
+}
+.img_movie{
+  display: flex;
+  overflow: auto;
+}
+.movie_imgitem image{
+  width: 200rpx;
+  height: 250rpx;
+  margin-right: 10rpx;
+}
+.title_movieimg{
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.movieimg{
+  padding: 20rpx 20rpx;
+}
+.title_argument{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid gainsboro;
+}
+.arguments{
+  padding: 20rpx 20rpx 0 20rpx;
+    border-bottom: 1px solid gainsboro;
+}
+.head{
+  width: 100rpx;
+  height:100rpx;
+  margin-right: 30rpx;
+  flex-grow: 1;
+}
+.zanbefo{
+  width: 40rpx;
+  height: 40rpx;
+}
+.user{
+display: flex;
+font-size: 14px;
+}
+.msg_arg{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: lightgrey;
+}
+.user_argright{
+  display:  flex;
+  flex-direction: column;
+  flex-grow: 3
+}
+.user_argright>view{
+  margin-bottom: 20rpx;
+}
+.img_font{
+  border: 1px solid red;
+  border-radius: 50px;
+  padding: 2px 4px;
+  color: red;
+  font-size: 10px;
+}
